@@ -15,4 +15,3 @@ const fun =(data)=>{
     let body=document.querySelector('body');
     body.innerHTML=JSON.stringify(data);
 }
-
