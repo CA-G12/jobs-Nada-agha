@@ -32,7 +32,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 4rem;
 }
@@ -111,7 +111,8 @@ section.search {
     }
   }
   .content{
-    width:100%
+    width:100%;
+    padding-bottom: 80px;
     }
     .card{
     width: 30%;
@@ -124,6 +125,11 @@ section.search {
      border-radius: 5px;
      margin-top: 50px;
      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    .Empty{
+      margin: 0 auto;
+      font-size: 25px;
+      font-weight: 700;
     }
     .card p{
     line-height: 2rem;
@@ -140,6 +146,7 @@ section.search {
     text-align:center;
     }
     .card .title{
+      padding: 0 5px;
      font-size: 28px; 
      height: 50px;
      display: flex;
@@ -147,7 +154,10 @@ section.search {
      align-items: center;
      border-top-left-radius: 5px;
      border-top-right-radius:5px ;
+     /* overflow: hidden; */
+     inline-size: 150px; 
      overflow: hidden;
+     white-space: nowrap;
      font-weight: bold;
      color:#fdfcdc;
      width: 100%;
@@ -195,9 +205,45 @@ section.search {
         color:black
     } */
     .static-jobs{
+      position: relative;
     width:100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     }
+    .loader{
+      position :absolute;
+      top: 0;
+      left:50%;
+      width:100px;
+      height:100px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:transparent;
+      transform: translateX(-50%);
+      transition :opacity .75s,visibility  .75s;
+      }
+      .loader--hidden{
+      opacity:0;
+      visibility: hidden;
+      }
+      .loader::after{
+      content:"";
+      width:50px;
+      height:50px;
+      border:10px solid var(--thirdColor);
+      border-top-color:var(--mainColor);
+      border-radius:50%;
+       animation:loading .75s  ease infinite
+      }
+      @keyframes loading{
+      from {
+      transform:rotate(0turn)
+      
+      }
+      to {
+      transform:rotate(1turn);
+      }
+      }
