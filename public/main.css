@@ -101,3 +101,74 @@ section.search {
         transform: translateY(0);
     }
   }
+  .content{
+    width:100%
+    }
+    .card{
+     
+     background-color: #f07167;
+     padding-top: 20px;
+    
+     padding-left: 30px;
+     padding-right: 30px;
+     margin-bottom: 20px;
+     padding-bottom: 20px;
+     border-radius: 5px;
+     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+    }
+    .card p{
+    line-height: 2rem;
+    margin-bottom: 5px;
+    }
+    .read{
+    border-radius: 5px;
+    border:none;
+    padding:10px;
+    background-color:#fdfcdc;
+    margin: 20px  auto;
+    display: block;
+    width:150px;
+    text-align:center;
+    }
+    .card .title{
+     font-size: 28px; 
+     font-weight: bold;
+     color:#fdfcdc;
+    }
+    .card .category{
+    color:#eee;
+    font-size:18px ;
+    font-weight: 400;
+    }
+    .card .min-sallary{
+    color: #fed9b7;
+    font-weight: bold;
+    }
+    .card .min-sallary span{
+    color: black;
+    }
+    .card  .max-sallary{
+        color: #fed9b7;
+    }
+    .card .min-sallary span{
+        color: black
+        }
+        .card .max-sallary span{
+            color: black;
+            font-weight: bold;
+            }
+    .card  .location {
+        color: #fed9b7;
+        font-weight:bold;
+    }
+    .card  .location span {
+        color:black
+    }
+    .static-jobs{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    }
