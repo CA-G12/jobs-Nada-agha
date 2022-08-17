@@ -2,6 +2,7 @@ let btn =document.querySelector('button');
 let input = document.querySelector('input')
 let jobsContainer=document.querySelector('.static-jobs')
 btn.addEventListener('click',(e)=>{
+    jobsContainer.textContent=''
     let load = createElement('div', 'loader');
     jobsContainer.appendChild(load);
     fetchNode('/search',{q:input.value}).then((data)=>{

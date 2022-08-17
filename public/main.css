@@ -125,6 +125,11 @@ section.search {
      border-radius: 5px;
      margin-top: 50px;
      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+     animation: anim2 1s .2s ease backwards;
+      transition: transform .4s ease;
+    }
+    .card:hover{
+      transform: scale(.9);
     }
     .Empty{
       margin: 0 auto;
@@ -245,5 +250,14 @@ section.search {
       }
       to {
       transform:rotate(1turn);
+      }
+      }
+      @keyframes anim2{
+      from {
+      transform: scale(0)
+      
+      }
+      to {
+      transform: none;
       }
       }
