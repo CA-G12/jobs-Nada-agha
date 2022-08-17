@@ -10,7 +10,15 @@
     --secColor: #fed9b7;
     --thirdColor: #f07167;
 }
-
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--mainColor);
+  font-weight: 700;
+}
 body {
     background-color: var(--backGround);
     color: #000;
@@ -18,6 +26,7 @@ body {
 }
 
 .container {
+  padding-top: 100px;
     width: 80%;
     min-height: 100vh;
     margin: 0 auto;
@@ -105,17 +114,16 @@ section.search {
     width:100%
     }
     .card{
-     
+    width: 30%;
+    height: 280px;
      background-color: #f07167;
-     padding-top: 20px;
-    
-     padding-left: 30px;
-     padding-right: 30px;
-     margin-bottom: 20px;
+     /* padding-top: 20px; */
+     /* padding-left: 30px;
+     padding-right: 30px; */
      padding-bottom: 20px;
      border-radius: 5px;
+     margin-top: 50px;
      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    
     }
     .card p{
     line-height: 2rem;
@@ -133,8 +141,21 @@ section.search {
     }
     .card .title{
      font-size: 28px; 
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-top-left-radius: 5px;
+     border-top-right-radius:5px ;
+     overflow: hidden;
      font-weight: bold;
      color:#fdfcdc;
+     width: 100%;
+     text-align: center;
+     background-color: var(--mainColor);
+    }
+    p{
+      padding: 0 20px;
     }
     .card .category{
     color:#eee;
@@ -161,10 +182,18 @@ section.search {
     .card  .location {
         color: #fed9b7;
         font-weight:bold;
+        display: flex;
+        align-items: center;
     }
     .card  .location span {
-        color:black
+      display: inline-block;
+      width: 150px;
+      height: 32px;
+      overflow: hidden;
     }
+    /* .card  .location span {
+        color:black
+    } */
     .static-jobs{
     width:100%;
     display:flex;
