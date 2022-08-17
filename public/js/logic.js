@@ -8,10 +8,3 @@ function fetchNode(url,data) {
         }
     })
 }
-fetchNode('/search',{q:'game of thrones'})
-.then(data=>data.json())
-.then(data=>fun(data))
-const fun =(data)=>{
-    let body=document.querySelector('body');
-    body.innerHTML=JSON.stringify(data);
-}
