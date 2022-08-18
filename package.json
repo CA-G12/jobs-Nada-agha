@@ -1,0 +1,30 @@
+{
+  "name": "jobs-nada-agha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": " jest  test.js",
+    "start": " node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CA-G12/jobs-Nada-agha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CA-G12/jobs-Nada-agha/issues"
+  },
+  "homepage": "https://github.com/CA-G12/jobs-Nada-agha#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jest": "^28.1.3",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.19",
+    "supertest": "^6.2.4"
+  }
+}
